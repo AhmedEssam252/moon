@@ -41,7 +41,7 @@ const App = () => {
       e.preventDefault();
       const formData = new FormData();
       formData.append('Email', Email)
-      const path = window.location.hostname !== 'moonegypt.com' ? 'https://backend.test/api/subscrip': 'https://api1.moonegypt.com/api/subscrip';
+      const path = window.location.hostname !== 'moonegypt.com' ? 'https://backend.test/api/subscrip': 'https://dashboard.moonegypt.com/api/subscrip';
       await axios.post(path, formData)
       .then(({data})=>{
           console.log(data.message)

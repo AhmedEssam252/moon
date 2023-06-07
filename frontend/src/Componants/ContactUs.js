@@ -22,7 +22,7 @@ export default function ContactUs(props) {
      formData.append('Type', Type)
      formData.append('Message', Message)
 
-     const path = window.location.hostname !== 'moonegypt.com' ? 'https://backend.test/api/message': 'https://api1.moonegypt.com/api/message';
+     const path = window.location.hostname !== 'moonegypt.com' ? 'https://backend.test/api/message': 'https://dashboard.moonegypt.com/api/message';
 
      await axios.post(path, formData)
      .then(({data})=>{

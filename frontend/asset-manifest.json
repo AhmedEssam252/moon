@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e8ee9615.css",
-    "main.js": "/static/js/main.d9e257c3.js",
+    "main.js": "/static/js/main.89b92b48.js",
     "static/js/787.1d4b8b49.chunk.js": "/static/js/787.1d4b8b49.chunk.js",
     "static/media/muslim.png": "/static/media/muslim.c61d28c3a814ee1d575c.png",
     "static/media/ecommerce.png": "/static/media/ecommerce.045f2b7243779b2ea427.png",
@@ -45,11 +45,11 @@
     "static/media/whiteTringle.svg": "/static/media/whiteTringle.aa298595d2398394078a.svg",
     "static/media/React.svg": "/static/media/React.0ef03e861733ce80f16743069531bb36.svg",
     "main.e8ee9615.css.map": "/static/css/main.e8ee9615.css.map",
-    "main.d9e257c3.js.map": "/static/js/main.d9e257c3.js.map",
+    "main.89b92b48.js.map": "/static/js/main.89b92b48.js.map",
     "787.1d4b8b49.chunk.js.map": "/static/js/787.1d4b8b49.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8ee9615.css",
-    "static/js/main.d9e257c3.js"
+    "static/js/main.89b92b48.js"
   ]
 }
