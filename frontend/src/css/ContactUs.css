@@ -1,0 +1,110 @@
+#contactUs{
+    justify-items: center;
+    font-size: 22px;
+    text-align: center;
+}
+form{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+#contactUs form input ,#contactUs form textarea {
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 60%;
+    margin: 40px 0;
+    font-weight: 600;
+}
+#contactUs form div{
+    width: 100%;
+    position: relative;
+}
+#contactUs form div:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 60px;
+    height: 100px;
+    background: url('../images/home/spaceShip-lg.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#contactUs form div:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    width: 60px;
+    height: 100px;
+    background: url('../images/home/spaceShip-y.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#contactUs form div:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    background: url('../images/home/star.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#contactUs form div:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    background: url('../images/home/star.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#contactUs form div:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 17%;
+    width: 80px;
+    height: 80px;
+    background: url('../images/home/star.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#contactUs form div:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 17%;
+    width: 80px;
+    height: 80px;
+    background: url('../images/home/star.svg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+#contactUs form textarea {
+    height: 200px;
+}
+
+#contactUs form button{
+    height: 40px;
+    border-radius: 30px;
+    outline: nonr;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    width: 200px;
+    background-color: #0CA48D;
+    position: relative;
+    margin: 20px 0;
+}

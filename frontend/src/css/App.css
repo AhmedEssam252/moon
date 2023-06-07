@@ -1,0 +1,513 @@
+
+.title2{
+   display: none;
+}
+.section{
+    position: relative;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+  }
+  .section .title{
+    position: relative;
+  }
+  #os-softwares .title{
+    margin: 20px 140px 30px 140px;
+  }
+  .section .title h1{
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .section .title h1::after{
+    content: "";
+    width: 105%;
+    height: 40%;
+    position: absolute;
+    background-color: #0dcca655;
+    border-radius: 40px;
+  }
+
+@font-face{
+   font-family:'moon-ar';
+   src:url('../fonts/ar/ElMessiri-VariableFont_wght.ttf');
+}
+
+@font-face{
+   font-family:'moon-en';
+   src:url('../fonts/en/Glory-VariableFont_wght.ttf');
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+iframe{
+    display: none;
+}
+
+html[lang="ar"] *{
+   font-family:'moon-ar' !important;
+}
+html[lang="en"] *{
+   font-family:'moon-en' !important;
+}
+body{
+  background:#023047;
+  overflow-x: hidden;
+}
+a{
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
+}
+
+a, p, h1, h2, button{
+  color:#fff;
+}
+
+button{
+  outline:none;
+  border:none;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+}
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 0px
+}
+nav .logo a{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  font-size:25px;
+  margin:0 50px;
+}
+nav .logo h1{
+    margin:0px 20px;
+    font-weight:600;
+}
+nav .navbar{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+nav .navbar .closeToggle{
+    justify-self: start;
+    display:none;
+    background: #858585;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}  
+nav .navbar ul{
+    display:flex;
+    list-style:none;
+    margin: 0;
+}
+nav .navbar ul li a{
+    margin:0 20px;
+}
+nav .navbar ul li a:hover{
+    color:#FBB040;
+    transition:0.3s ease-in-out;
+}
+nav .navbar ul li a:focus{
+    color:#FBB040;
+}
+nav .navbar .otherItems{
+    margin:0 50px 0 60px;
+}
+nav .navbar .otherItems .lang button{
+    background:#0CA48D;
+    border-radius:40px;
+    padding:10px;
+}
+nav .toggle {
+    transform: rotateY(180deg);
+    display: none;
+    cursor: pointer;
+    background:#858585;
+    padding:5px;
+    border-radius:5px;
+    position:relative;
+}
+nav .toggle div {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 50px;
+    transition: 0.7s ease-in-out;
+}
+nav .toggle div:nth-child(1){
+    width: 20px;
+}
+nav .toggle div:nth-child(2){
+    width: 27px;
+}
+nav .toggle.change div{
+    width: 20px !important;
+    transition: 0.7s ease-in-out;
+}
+html[lang="en"] nav .toggle.change div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-2px, 12px);
+    transform: rotate(-45deg) translate(-2px, 12px);
+}
+html[lang="en"] nav .toggle.change div:nth-child(2) {
+    opacity: 0;
+}
+html[lang="en"] nav .toggle.change div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-2px, -12px);
+    transform: rotate(45deg) translate(-2px, -12px);
+}
+html[lang="ar"] nav .toggle.change div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-12px, 2px);
+    transform: rotate(-45deg) translate(-12px, 2px);
+}
+html[lang="ar"] nav .toggle.change div:nth-child(2) {
+    opacity: 0;
+
+}
+html[lang="ar"] nav .toggle.change div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-12px, -2px);
+    transform: rotate(45deg) translate(-12px, -2px);
+}
+@media (max-width:1006px){
+
+    nav .navbar{
+        display:none;
+    }
+    nav .navbar .closeToggle{
+        display:block;
+    }  
+    nav .navbar{
+        display: grid;
+        position: fixed;
+        top: 50%;
+        z-index: 10;
+        background-color: #fff;
+        height: 70vh;
+        width: 270px;
+        justify-items: center;
+        transition: 0.7s ease-in-out;
+    }
+    html[lang="en"] nav .navbar{
+        right: 0px;
+        transform: translate(300px, -50%);
+        border-radius: 50px 0 0 50px;
+    }
+    html[lang="ar"] nav .navbar{
+        left: 0px;
+        transform: translate(-300px, -50%);
+        border-radius: 0 50px 50px 0;
+    }
+    html[lang="en"] nav .navbar.change {
+        transform: translate(0px, -50%);
+        transition: 0.7s ease-in-out; 
+    }
+    html[lang="ar"] nav .navbar.change {
+        transform: translate(0px, -50%);
+        transition: 0.7s ease-in-out; 
+    }
+    nav .navbar ul {
+        margin: 20px 20px 0 20px;
+        flex-direction: column;
+        align-self: center;
+    }
+    nav .navbar ul li {
+        margin: 20px;
+    }
+    nav .navbar ul li a {
+        color: #858585; 
+    }
+    nav .navbar button {
+        align-self: center;
+    }
+    nav .toggle {
+        display: block;
+        margin:0 50px;
+        width:45px;
+    }
+}
+
+@media(max-width:500px){
+    nav{
+        justify-content:space-evenly;
+    }
+    nav .logo{
+        width: 50%;
+    }
+    nav .navbar .closeToggle{
+        justify-self: start;
+        cursor: pointer;
+        background:#858585;
+        padding: 3px 10px 5px 10px;
+        border-radius: 5px;
+    }
+    html[lang="ar"] nav .navbar .closeToggle{
+        justify-self: start;
+        cursor: pointer;
+        background:#858585;
+        padding: 7px 10px 5px 10px;
+        border-radius: 5px;
+    }
+    nav .toggle {
+        display: block;
+        margin: 0 10px;
+    }    
+      nav .logo a{
+        font-size:20px;
+        margin:0 50px;
+      }
+      nav .logo a{
+        font-size:20px;
+        margin:0 50px;
+      }
+      nav .logo a img{
+        width: 60px;
+        height: 60px;
+      }
+      nav .logo a h1{
+        margin: 0 10px;
+      }
+      nav .toggle {
+        width: 34px;
+        padding: 4px;
+      }
+      nav .toggle div {
+        width: 25px;
+        height: 3px;
+        margin: 4px 0;
+    }
+    nav .toggle div:nth-child(2) {
+        width: 18px;
+    }
+    nav .toggle div:nth-child(1) {
+        width: 12px;
+    }
+    html[lang="en"] nav .toggle.change div:nth-child(1) {
+        -webkit-transform: rotate(-45deg) translate(-3px, 7px);
+        transform: rotate(-45deg) translate(-3px, 7px);
+    }
+    html[lang="en"] nav .toggle.change div:nth-child(2) {
+        opacity: 0;
+    }
+    html[lang="en"] nav .toggle.change div:nth-child(3) {
+        -webkit-transform: rotate(45deg) translate(-3px, -7px);
+        transform: rotate(45deg) translate(-3px, -7px);
+    }
+    html[lang="ar"] nav .toggle.change div:nth-child(1) {
+        -webkit-transform: rotate(-45deg) translate(-7px, 3px);
+        transform: rotate(-45deg) translate(-7px, 3px);
+    }
+    html[lang="ar"] nav .toggle.change div:nth-child(2) {
+        opacity: 0;
+    
+    }
+    html[lang="ar"] nav .toggle.change div:nth-child(3) {
+        -webkit-transform: rotate(45deg) translate(-7px, -3px);
+        transform: rotate(45deg) translate(-7px, -3px);
+    }
+}
+
+
+#footer{
+    width: 130%;
+    height: 700px;
+    margin-top: 200px;
+    background: url('../images/home/moonFooter.svg') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    grid-auto-rows: 20% 35% 35% 10%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #footer::after{
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(2deg);
+    width: 320px;
+    height: 205px;
+    background: url('../images/home/spaceShips.svg') no-repeat;
+    background-size: cover;
+  }
+  
+  html[lang="en"] #footer{
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  
+  html[lang="ar"] #footer{
+    right: 50%;
+    transform: translate(50%,0);
+  }
+  
+  #footer .title{
+    margin-top: 100px;
+  }
+  #footer .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #footer .text {
+    width: 40%;
+    margin: 0 20px;
+  }
+  #footer .logo {
+    text-align: center;
+    margin: 0 20px;
+  }
+  #footer .subscription {
+    display: grid;
+    justify-items: center;
+  }
+  #footer .subscription h1{
+    position: relative;
+    font-weight: 600;
+  }
+  #footer .subscription h1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    transform: translate(-50%,0);
+    background-color: #FBB040;
+    border-radius: 20px;
+  }
+  #footer .subscription input{
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 22px;
+    width: 100%;
+    margin: 40px 0;
+  }
+  #footer .subscription button::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100%;
+    width: 88px;
+    height: 70px;
+    background: url('../images/home/remover.svg') no-repeat;
+    background-size: cover;
+  }
+  #footer .subscription button::after{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100%;
+    width: 88px;
+    height: 70px;
+    background: url('../images/home/remover.svg') no-repeat;
+    background-size: cover;
+  }
+  #footer .subscription button{
+    height: 40px;
+    border-radius: 30px;
+    outline: nonr;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    width: 200px;
+    background-color: #0CA48D;
+    position: relative;
+  }
+
+  @media (max-width:730px) {
+    #footer{
+        width: 100%;
+        height: 800px;
+        font-size: 18px;
+        grid-auto-rows: 14% 50% 27% 10%;
+        border-top: 40px solid #fff;
+        position: static;
+        background: #858585;
+      }
+      #footer::after{
+        content: "";
+        position: absolute;
+        top: -32.3%;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(0deg);
+        width: 330px;
+        height: 205px;
+        background: url('../images/home/spaceShips2.svg') no-repeat;
+        background-size: cover;
+      }
+
+    html[lang="en"] #footer{
+        transform: translate(0%,0);
+    }
+    
+    html[lang="ar"] #footer{
+        transform: translate(0%,0);
+    }
+      #footer .title{
+        margin-top: 60px;
+      }
+      #footer .content{
+        display: grid;
+        justify-items: center;
+        margin-top: 20px;
+        align-self: center;
+      }
+      
+      #footer .text {
+        width: 40%;
+        margin: 0 20px;
+      }
+      #footer .logo {
+        text-align: center;
+        margin: 0 20px;
+      }
+      #footer .subscription h1{
+        font-size: 25px;
+      }
+      #footer .subscription h1::after{
+        width: 150px;
+      }
+      #footer .subscription input{
+        font-size: 18px;
+        margin: 30px 0;
+        width:150px;
+      }
+      #footer .text {
+        width: 90%;
+      }
+      #footer .subscription button::before{
+        top: -70px;;
+        right: -40%;
+        width: 45px;
+        height: 35px;
+      }
+      #footer .subscription button::after{
+        top: -70px;
+        left: -40%;
+        width: 45px;
+        height: 35px;
+      }
+      #footer .subscription button{
+        height: 30px;
+        font-size: 20px;
+        width: 150px;
+      }
+  }

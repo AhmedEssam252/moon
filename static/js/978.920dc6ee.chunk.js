@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmoonegypt=self.webpackChunkmoonegypt||[]).push([[978],{978:function(n,e,r){r.r(e),r.d(e,{default:function(){return u}});var t=r(184);var u=function(n){var e=n.lang;return(0,t.jsx)("h1",{children:e.zoom})}}}]);
+//# sourceMappingURL=978.920dc6ee.chunk.js.map

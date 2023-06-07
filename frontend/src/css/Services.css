@@ -1,0 +1,128 @@
+.main-header {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto 4rem;
+}
+.main-header::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1rem);
+  left: -10px;
+  height: 30%;
+  background-color: #0dcca5;
+  top: 70%;
+  border-radius: 1rem;
+  opacity: 0.41;
+}
+#services h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#services p {
+  font-size: 20px;
+  font-weight: 600;
+}
+#services .front-end {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+#services .box {
+  background-color: #0000007a !important;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+#services .front-end h2 {
+  width: fit-content;
+  color: #0dcca5;
+}
+
+#services .front-end .customBorder {
+  top: 0;
+  margin-left: 2.5rem;
+}
+#services .front-end .customBorder div {
+  bottom: 0;
+  width: 20px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 0 0.5rem;
+}
+@media (max-width: 991.98px) {
+  #services .front-end .customBorder {
+    display: none !important;
+  }
+  #services .front-end h2 {
+    width: auto;
+    text-align: center;
+  }
+}
+
+#services .back-end {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+#services .back-end .box {
+  background-color: #0000007a !important;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+#services .back-end h2 {
+  width: fit-content;
+  color: #fbb040;
+  align-self: end;
+}
+
+#services .back-end .customBorder {
+  top: 0;
+  margin-right: 2.5rem;
+}
+#services .back-end .customBorder div {
+  bottom: 0;
+  width: 20px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 0 0.5rem;
+}
+@media (max-width: 991.98px) {
+  #services .back-end .customBorder {
+    display: none !important;
+  }
+  #services .back-end h2 {
+    width: auto;
+    text-align: center;
+  }
+}
+
+#services .dev-ops h2 {
+  color: #c0cb21;
+}
+
+#services .dev-ops .customBorder div {
+  height: 20px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 0.5rem 0;
+}
+@media (max-width: 991.98px) {
+  #services .dev-ops .customBorder {
+    display: none !important;
+  }
+}
+#services .content a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  background-color: #fbb040;
+}
+#services a {
+  color: white !important;
+}

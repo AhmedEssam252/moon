@@ -1,0 +1,139 @@
+.main-header,
+.second-header {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto 4rem;
+}
+.main-header::before,
+.second-header::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1rem);
+  left: -10px;
+  height: 30%;
+  top: 70%;
+  border-radius: 1rem;
+  opacity: 0.41;
+}
+.main-header::before {
+  background-color: #0dcca5;
+}
+.second-header::before {
+  background-color: #fbb040;
+}
+#about h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#about p {
+  font-size: 20px;
+  font-weight: 600;
+}
+#about .box {
+  background-color: #0000007a !important;
+  color: #ffffff;
+  border-radius: 1rem;
+  width: 90%;
+}
+
+#about .vision-title {
+  color: #fbb040;
+}
+#about .and-title {
+  color: white;
+}
+/* #about .vision-title::before,
+#about .and-title::before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    top: 100%;
+    left: 50%;
+    border-style: dashed;
+    border-color: white;
+    border-width: 0px 0px 0px 4px;
+} */
+#about .customBorder {
+  top: 100%;
+  margin-top: 2.5rem;
+}
+#about .customBorder div {
+  bottom: 0;
+  width: 8px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 0.5rem 0;
+}
+@media (max-width: 991.98px) {
+  #about .customBorder {
+    top: 100%;
+    margin-top: 1rem;
+  }
+  #about .customBorder div {
+    bottom: 0;
+    width: 4px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 0.5rem 0;
+  }
+}
+#about .note .box {
+  width: 80%;
+}
+#about .note h3::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #858585;
+  opacity: 0.4;
+  border-radius: 1rem;
+  z-index: -1;
+}
+#about .second-title {
+  color: #0dcca5;
+}
+#about .second-title .num {
+  top: 0.2rem;
+  left: -2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+html[lang="ar"] #about .second-title .num {
+  right: -2rem;
+}
+#about .second-title .number {
+  position: absolute;
+  top: -1.25rem;
+  color: #fbb040;
+  font-weight: bolder;
+  left: 0.75rem;
+  transform: translateX(-50%);
+}
+
+#about .text ul {
+  list-style: none;
+}
+#about .text ul li {
+  padding: 1rem 0;
+  position: relative;
+  font-weight: bolder;
+}
+#about .text ul li::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fbb040;
+  margin-left: -1.5rem;
+  top: 1rem;
+  border-radius: 50%;
+}
+html[lang="ar"] #about .text ul li::before {
+  margin-right: -1.5rem;
+}

@@ -1,0 +1,890 @@
+#Home{
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+#Home .content{
+  margin:50px 0;
+}
+#Home .space .moon{
+  position: absolute;
+  z-index: 2;
+}
+
+#Home .space .moon{
+  top: 46%;
+}
+html[lang="en"] #Home .space .moon{
+  right: -300px;
+}
+html[lang="ar"] #Home .space .moon{
+  left: -300px;
+}
+
+#Home .space .spaceship{
+  position: absolute;
+  top: 5%;
+}
+
+html[lang="en"] #Home .space .spaceship{
+  right: 70px;
+}
+
+html[lang="ar"] #Home .space .spaceship{
+  left: 70px;
+}
+
+#Home .stars .star{
+  position: absolute;
+  transform: rotate(45deg);
+}
+@keyframes star {
+  0%{
+    transform: rotate(45deg);
+  }
+  25%{
+    transform: rotate(60deg);
+  }
+  50%{
+    transform: rotate(45deg);
+  }
+  75%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(45deg);
+  }
+}
+
+#Home .stars .star{
+  animation: star 5s ease-in-out infinite;
+}
+
+
+#Home .stars .star:nth-child(1){
+  top: 0;
+}
+#Home .stars .star:nth-child(2){
+  top: 40%;
+  width: 40px;
+  height: 40px;
+}
+#Home .stars .star:nth-child(3){
+  top: 0;
+}
+#Home .stars .star:nth-child(4){
+  top: 40%;
+  width: 40px;
+  height: 40px;
+}
+#Home .stars .star:nth-child(5){
+  top: 25%;
+  width: 80px;
+  height: 80px;
+}
+#Home .stars .star:nth-child(6){
+  top: 60%;
+  width: 40px;
+  height: 40px;
+}
+#Home .stars .star:nth-child(7){
+  top: 55%;
+  width: 40px;
+  height: 40px;
+}
+html[lang='en'] #Home .stars .star:nth-child(1){
+  right:-30px;
+}
+html[lang='en'] #Home .stars .star:nth-child(2){
+  right:20px;
+}
+html[lang='en'] #Home .stars .star:nth-child(3){
+  right:270px;
+}
+html[lang='en'] #Home .stars .star:nth-child(4){
+  right:230px;
+}
+html[lang='en'] #Home .stars .star:nth-child(5){
+  right:350px;
+}
+html[lang='en'] #Home .stars .star:nth-child(6){
+  right:470px;
+}
+html[lang='en'] #Home .stars .star:nth-child(7){
+  right:350px;
+}
+
+html[lang='ar'] #Home .stars .star:nth-child(1){
+  left:-30px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(2){
+  left:20px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(3){
+  left:270px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(4){
+  left:230px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(5){
+  left:350px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(6){
+  left:470px;
+}
+html[lang='ar'] #Home .stars .star:nth-child(7){
+  left:350px;
+}
+
+
+#Home .content .first-line, #Home .content .second-line{
+  display:flex;
+}
+
+#Home .content .first-line p, #Home .content .second-line p{
+  font-size:50px;
+  font-weight:bold;
+  margin:30px 10px;
+}
+
+#Home .content .first-line p:nth-child(1){
+  background:#FBB040;
+  padding:5px 20px;
+  border-radius:20px;
+}
+
+#Home .content .second-line p:nth-child(2){
+   background:#0DCCA5;
+   padding:5px 20px;
+   border-radius:20px;
+}
+#Home .content .first-line p:nth-child(3){
+   position:relative;
+}
+ #Home .content .first-line p:nth-child(3)::after {
+   content: attr(data-word1);
+   position: absolute;
+   top: 0px;
+   overflow: hidden;
+   color:#FBB040;
+   animation: change-word 15s  ease-in-out infinite;
+}
+html[lang="en"] #Home .content .first-line p:nth-child(3)::after {
+   left: 0px;
+}
+html[lang="ar"] #Home .content .first-line p:nth-child(3)::after {
+   right: 0px;
+}
+@keyframes change-word {
+  0% {
+    content: attr(data-word1);
+    width: 0px; }
+  25% {
+    content: attr(data-word1);
+    width: 130px; }
+  45% {
+    content: attr(data-word1);
+    width: 0px; }
+  50% {
+    content: attr(data-word2);
+    width: 0px; }
+  75% {
+    content: attr(data-word2);
+    width: 150px; }
+  100% {
+    content: attr(data-word2);
+    width: 0px; } 
+}
+#Home .content .More {
+    margin: 40px 0;
+}
+#Home .content .More a{
+    background:#0DCCA5;
+    padding:10px 220px;
+    border-radius:10px;
+}
+
+@media  (max-width:1060px){
+  #Home{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  #Home .space .moon{
+    width: 470px;
+    height: 470px;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  html[lang="en"] #Home .space .moon{
+    right: 50%;
+    transform: translate(50% , 0);
+    top: 120%;
+  }
+  html[lang="ar"] #Home .space .moon{
+    right: 50%;
+    transform: translate(50% , 0);
+    top: 126.5%;
+  }
+
+  #Home .space .spaceship{
+    width: 80px;
+    height: 133px;
+    position: absolute;
+    top: 46%;
+  }
+  html[lang="en"] #Home .space .spaceship{
+    right: 50%;
+    transform: translate(50% , 0);
+  }
+  
+  html[lang="ar"] #Home .space .spaceship{
+    left: 50%;
+    transform: translate(-50% , 0);
+  }
+   #Home .stars .star{
+    position: absolute;
+    z-index: 0;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(1){
+    right:80%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(2){
+    right:60%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(3){
+    right:10%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(4){
+    right:30%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(5){
+    top: 15%;
+    right:50%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(6){
+    right:70%;
+  }
+  html[lang='en'] #Home .stars .star:nth-child(7){
+    right:60%;
+  }
+  
+  html[lang='ar'] #Home .stars .star:nth-child(1){
+    left:80%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(2){
+    left:60%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(3){
+    left:10%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(4){
+    left:30%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(5){
+    top: 15%;
+    left:50%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(6){
+    left:70%;
+  }
+  html[lang='ar'] #Home .stars .star:nth-child(7){
+    left:60%;
+  }
+  
+}
+
+@media (max-width:750px) {
+  #Home .content .first-line p, #Home .content .second-line p{
+    font-size:35px;
+  }
+  #Home .content .More a{
+    padding:10px 170px;
+  }
+  #Home .space .moon{
+    margin-top: 65px;
+  }
+  #Home .space .spaceship{
+    top: 44%;
+  }
+
+  @keyframes change-word {
+    0% {
+      content: attr(data-word1);
+      width: 0px; }
+    25% {
+      content: attr(data-word1);
+      width: 100px; }
+    45% {
+      content: attr(data-word1);
+      width: 0px; }
+    50% {
+      content: attr(data-word2);
+      width: 0px; }
+    75% {
+      content: attr(data-word2);
+      width: 120px; }
+    100% {
+      content: attr(data-word2);
+      width: 0px; } 
+  }
+}
+
+@media (max-width:500px) {
+  #Home .content{
+    margin: 20px 0;
+  }
+  #Home .content .first-line p:nth-child(3) {
+    top: 50px;
+  }
+  html[lang="ar"] #Home .content .first-line p:nth-child(3) {
+    right: -20px;
+  }
+  html[lang="en"] #Home .content .first-line p:nth-child(3) {
+    left: -80px;
+  }
+  #Home .content .first-line p, #Home .content .second-line p{
+    margin: 10px 5px;
+    font-size:30px;
+  }
+  #Home .content .first-line p, #Home .content .second-line{
+    margin-top: 40px;
+  }
+  #Home .content .More a{
+    padding:8px 80px;
+    font-size: 16px;
+  }
+  html[lang="ar"] #Home .content .More a{
+    padding:5px 80px 2px 80px;
+  }
+  #Home .space .moon{
+    width: 270px;
+    height: 270px;
+    margin-top:55px;
+  }
+  #Home .space .spaceship{
+    width: 60px;
+    top: 45.2%;
+  }
+  #Home .stars .star img{
+    position: absolute;
+  }
+  #Home .stars .star img{
+    width: 40px;
+    height: 40px;
+  }
+  html[lang="en"] #Home .stars .star:nth-child(2){
+    top:45%;
+  }
+  html[lang="en"] #Home .stars .star:nth-child(4){
+    top:45%;
+  }
+  html[lang="en"] #Home .stars .star:nth-child(5){
+    top:20%;
+  }
+  html[lang="en"] #Home .stars .star:nth-child(7){
+    top:60%;
+    left: 75%;
+  }
+  html[lang="ar"] #Home .stars .star:nth-child(1){
+    top: 4%;
+  }
+  html[lang="ar"] #Home .stars .star:nth-child(2){
+    top:45%;
+  }
+  html[lang="ar"] #Home .stars .star:nth-child(3){
+    left: 30%;
+    top: 4%;
+  }
+  html[lang="ar"] #Home .stars .star:nth-child(4){
+    top:45%;
+  }
+  
+  html[lang="ar"] #Home .stars .star:nth-child(5){
+    top:15%;
+  }
+  html[lang="ar"] #Home .stars .star:nth-child(7){
+    top:60%;
+    right: 75%;
+  }
+  #Home .content .first-line p:nth-child(1), #Home .content .second-line p:nth-child(2) {
+    padding: 2px 10px;
+  }
+  @keyframes change-word {
+    0% {
+      content: attr(data-word1);
+      width: 0px; }
+    25% {
+      content: attr(data-word1);
+      width: 80px; }
+    45% {
+      content: attr(data-word1);
+      width: 0px; }
+    50% {
+      content: attr(data-word2);
+      width: 0px; }
+    75% {
+      content: attr(data-word2);
+      width: 90px; }
+    100% {
+      content: attr(data-word2);
+      width: 0px; } 
+  }
+}
+
+
+html[lang="en"] .section .title h1::after{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+html[lang="ar"] .section .title h1::after{
+  top: 40%;
+  right: 50%;
+  transform: translate(50%,0%);
+}
+#os-softwares{
+  overflow:hidden
+}
+#os-softwares .earth{
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+}
+html[lang="en"] #os-softwares .earth{
+  left: -150px;
+}
+html[lang="ar"] #os-softwares .earth{
+  right: -150px;
+}
+#os-softwares .moon{
+  display: none;
+}
+#os-softwares .softwares{
+  background-color: rgba(0, 0, 0, 0.326);
+  overflow-x: hidden;
+  max-height: 170px;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+#os-softwares .softwares .logos{
+  display: flex;
+  align-items: center;
+}
+html[lang="en"] #os-softwares .softwares .logos{
+  transform: translate(-100%,0);
+  animation:  30s slider-en ease-in infinite;
+}
+@keyframes slider-en{
+   from{
+    transform: translate(-125%,0);
+   }
+   to{
+    transform: translate(75%,0);
+   }
+}
+html[lang="ar"] #os-softwares .softwares .logos{
+  display: flex;
+  align-items: center;
+  transform: translate(100%,0);
+  animation:  30s slider-ar ease-in infinite;
+}
+@keyframes slider-ar{
+   from{
+    transform: translate(125%,0);
+   }
+   to{
+    transform: translate(-75%,0);
+   }
+}
+#os-softwares .softwares img{
+  margin: 0 50px;
+}
+
+@media  (max-width:1060px){
+  #os-softwares .title{
+    margin: 50px auto 20px auto;
+    position: static;
+  }
+  #os-softwares .title h1{
+    position: relative;
+    top: 60%;
+  }
+  #os-softwares .earth{
+    top: 50px;
+  }
+  #os-softwares .moon{
+    display: block;
+    position: absolute;
+    top: 50px;
+  }
+  html[lang="ar"] #os-softwares .moon{
+    left: -140px;
+  }
+  html[lang="en"] #os-softwares .moon{
+    right: -140px;
+
+  }
+  #os-softwares .softwares{
+    top: 720px;
+  }
+  html[lang="en"] .section .title h1::after{
+    top: 60%;
+  }
+  html[lang="ar"] .section .title h1::after{
+    top: 50%;
+  }
+  
+}
+
+@media  (max-width:500px){
+  #os-softwares .title{
+    margin: 20px auto 10px auto;
+  }
+  #os-softwares .title h1{
+    font-size: 22px;
+  }
+  #os-softwares .earth{
+    top: -40px;
+    width: 220px;
+  }
+  #os-softwares .moon{
+    top: -40px;
+    width: 200px;
+  }
+  #os-softwares .softwares img{
+     width: 80px;
+  }
+}
+
+#stages{
+  justify-items: center;
+}
+
+#stages .content{
+  width: 100%;
+}
+
+#stages .title{
+  margin-top: 280px;
+}
+
+#stages .SpaceShipO{
+  justify-self: start;
+  position: absolute;
+  top: 0%;
+  transform: rotate(180deg) translate(50%,120%);
+  top: 15%;
+  left: 15%;
+}
+
+#stages .customBorder div{
+  width: 8px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 10px 0 10px 0;
+}
+
+#stages .customBorder:nth-child(1){
+  width: 4px;
+  height: 20px;
+  border-radius: 40px;
+  margin: 10px 0 10px 0;
+  position: absolute;
+  top:  180px;
+}
+html[lang="en"] #stages .customBorder:nth-child(1){
+  left: 31%;
+  transform: rotate(-64deg);
+}
+html[lang="ar"] #stages .customBorder:nth-child(1){
+  right: 31%;
+  transform: rotate(64deg);
+}
+#stages .customBorder:nth-child(2){
+  width: 4px;
+  height: 20px;
+  border-radius: 40px;
+  margin: 10px 0 10px 0;
+  position: absolute;
+  top:  200px;
+}
+html[lang="en"] #stages .customBorder:nth-child(2){
+  left: 64%;
+  transform: rotate(64deg);
+}
+html[lang="ar"] #stages .customBorder:nth-child(2){
+  right: 64%;
+  transform: rotate(-64deg);
+}
+
+#stages .content .stage{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 50px auto;
+}
+#stages .content .stage .tools, #stages .content .stage .stageType{
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+#stages .content .stage .up {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#stages .content .stage .down {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#stages .content .stage .moonnow .traingle{
+  display:grid;
+  width: 100%;
+  position: relative;
+  margin: 50px 0;
+}
+#stages .content .stage .moonnow .traingle div {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background: #fff;
+}
+#stages .content .stage .moonnow .traingle div:nth-child(1) {
+   position: absolute;
+   top: 0;
+   left: 30%;
+}
+#stages .content .stage .moonnow .traingle div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 30%;}
+#stages .content .stage .moonnow .traingle div:nth-child(3) {
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  transform: translate(50%,0);
+}
+#stages .content .stage .stageType .down p{
+  background: rgba(0, 0, 0, 0.29);
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+#stages .content .stage .tools .down ol{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+#stages .content .stage .title{
+  display: flex;
+  margin: 0;
+  max-height: 50px;
+}
+#stages .content .stage .stageType .title h1::after{
+  background-color: #fbb04068;
+}
+#stages .content .stage .line{
+   width: 15%;
+   height: 6px;
+   border-radius: 20px;
+   background-color: #fff;
+   margin-top: 30px;
+}
+@media (max-width:1435px) {
+  #stages .customBorder div{
+    height: 15px;
+    margin: 6px 0 6px 0;
+  }
+  
+  #stages .customBorder:nth-child(1){
+    top:  220px;
+    left: 34%;
+  }
+  #stages .customBorder:nth-child(2){
+    top:  230px;
+    left: 62%;
+  } 
+}
+
+@media (max-width:1200px) {
+  #stages .customBorder div{
+    height: 10px;
+    margin: 4px 0 4px 0;
+  }
+  #stages .customBorder:nth-child(2){
+    width: 4px;
+    height: 20px;
+    border-radius: 40px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    top:  200px;
+  }
+  #stages .customBorder:nth-child(1){
+    top:  200px;
+    left: 32%;
+    transform: rotate(-60deg);
+  }
+  #stages .customBorder:nth-child(2){
+    top:  260px;
+    left: 62%;
+    transform: rotate(80deg);
+  } 
+  #stages .SpaceShipO{
+    top: 5%;
+    left: 8%;
+  }
+}
+
+@media (max-width:1060px) {
+  #stages .customBorder div{
+    height: 20px;
+    margin: 8px 0 8px 0;
+  }
+  #stages .title{
+    margin-top: 0px;
+  }
+  
+  #stages .customBorder:nth-child(1){
+    top:  150px;
+  }
+  #stages .customBorder:nth-child(2){
+    top:  130px;
+  }
+  html[lang="en"] #stages .customBorder:nth-child(2) {
+    left: 76%;
+    transform: rotate(54deg);
+  }
+  html[lang="en"] #stages .customBorder:nth-child(1) {
+    left: 20%;
+    transform: rotate(-55deg);
+  }
+  html[lang="ar"] #stages .customBorder:nth-child(2) {
+    right: 76%;
+    transform: rotate(-54deg);
+  }
+  html[lang="ar"] #stages .customBorder:nth-child(1) {
+    right: 20%;
+    transform: rotate(55deg);
+  }
+  #stages .SpaceShipO{
+    top: -10%;
+    left: 2%;
+    width: 140px;
+    height: 140px;
+  }
+  #stages .customBorder:nth-child(1) div:nth-child(6){
+    display: none;
+  } 
+  #stages .customBorder:nth-child(1) div:nth-child(7){
+    display: none;
+  }
+
+  #stages .content .stage .line{
+    display: none;
+  }
+
+  #stages .content .stage {
+    flex-flow: wrap;
+  }
+  #stages .content .stage p {
+    text-align: center;
+  }
+  #stages .content .stage .up {
+    display: grid;
+    grid-auto-columns: 100%;
+  }
+  #stages .content .stage .tools .up  img{
+    justify-self: end;
+  }
+  #stages .content .stage .typeStage  .up img{
+    justify-self: start;
+}
+  #stages .content .stage .up .title{
+    justify-self: center;
+    margin: 50px 0;
+}
+  #stages .content .stage .moonnow{
+    margin:  50px 0;
+}
+}
+
+@media (max-width:870px) {
+  #stages .customBorder div{
+    margin: 5px 0 5px 0;
+  }
+  
+  #stages .customBorder:nth-child(1){
+    top:  130px;
+    left: 26%;
+    transform: rotate(-50deg);
+  }
+  #stages .SpaceShipO{
+    width: 100px;
+    height: 100px;
+  }
+  #stages .customBorder:nth-child(1) div:nth-child(6){
+    display: none;
+  } 
+  #stages .customBorder:nth-child(1) div:nth-child(7){
+    display: none;
+  } 
+}
+
+@media (max-width:500px) {
+  #stages .title {
+    margin-top: 170px;
+}
+  #stages .customBorder div{
+    margin: 4px 0 4px 0;
+    height: 15px;
+    width: 6px;
+  }
+  
+  #stages .customBorder:nth-child(1){
+    top:  80px;
+  }
+  #stages .customBorder:nth-child(2){
+    top:  70px;
+  }
+
+  html[lang="en"] #stages .customBorder:nth-child(1) {
+    left: 20%;
+    transform: rotate(-43deg);
+  }
+  html[lang="en"] #stages .customBorder:nth-child(2) {
+    left: 82%;
+    transform: rotate(42deg);
+  }
+
+  html[lang="ar"] #stages .customBorder:nth-child(1) {
+    right: 20%;
+    transform: rotate(43deg);
+  }
+  html[lang="ar"] #stages .customBorder:nth-child(2) {
+    right: 82%;
+    transform: rotate(-42deg);
+  }
+  #stages .SpaceShipO{
+    top: -40%;
+    left: 2%;
+    width: 60px;
+    height: 60px;
+  }
+  #stages .content .stage .up img{
+    width: 50px;
+    height: 50px;
+  }
+  #stages .content .stage .up .title {
+    margin: 20px 0;
+  }
+}

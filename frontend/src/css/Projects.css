@@ -1,0 +1,65 @@
+:root {
+    --first-color-botton: #FBB040;
+    --second-color-botton: #0DCCA5;
+}
+
+.main-header {
+    position: relative;
+    width: fit-content;
+    margin: 2rem auto 4rem;
+}
+.main-header::before {
+    content: "";
+    position: absolute;
+    width:  calc(100% + 20px);
+    left : -10px;
+    height: 30%;
+    background-color: #0DCCA5;
+    top: 70%;
+    border-radius: 17px;
+    opacity: 0.41;
+}
+.second-header {
+    position: relative;
+    width: fit-content;
+    margin: 2rem auto 4rem;
+}
+.second-header::before {
+    content: "";
+    position: absolute;
+    width:  calc(100% + 20px);
+    left : -10px;
+    height: 30%;
+    background-color:#FBB040;
+    top: 70%;
+    border-radius: 17px;
+    opacity: 0.41;
+}
+/* #projects a:hover {
+  color: white !important;
+} */
+#projects  .layer {
+    background-color: #0000007A;
+}
+#projects .saas .layer a,
+#projects .e-commerce .layer a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    background-color: var(--first-color-botton);
+}
+#projects .wordpress .layer a,
+#projects .website .layer a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    background-color: var(--second-color-botton);
+}
