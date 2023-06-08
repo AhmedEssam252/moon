@@ -15,7 +15,7 @@ return [
 
     "ContactUs"=> "Contact Us",
     "Email" => "Email : info@moonegypt.com",
-    "copyrights" => "Copyright All Right Reserved To Moon Egypt",
+    "copyrights" => "All Right Reserved To Moon Egypt",
     "smallCompany" => "Moon Egypt is a small company we make it to help beginners in the Internet to spread their activity around the world without any restrictions",
     "Moon"=>"Moon",
 

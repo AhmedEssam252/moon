@@ -1,5 +1,5 @@
 import './css/App.css';
-import {lazy,Suspense, useState} from 'react';
+import {useState} from 'react';
 import axios from "axios";
 import logo from './images/home/moon.svg';
 import x from './images/x.svg';
