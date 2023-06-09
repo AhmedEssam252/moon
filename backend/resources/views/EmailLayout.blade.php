@@ -23,7 +23,6 @@
                     </tr>
                 </tbody>
             </table>
-
         </nav>
         @yield('content')
         <table width="100%">
@@ -36,15 +35,21 @@
             </tbody>
         </table>
         <div id="footer" class="section" style="display:grid;width: 100%;font-size: 18px;grid-auto-rows: auto;border-top: 40px solid #fff;background: #858585;">
-            <div class="title" style="margin-top: 60px;position: relative;">
-            </div>
-            <div class="content" style="display: flex;justify-content: center;align-items: center;">
-               <div class="logo" style="text-align: center;margin: 0 20px;">
-                  <img src="https://moonegypt.com/moon.svg" alt="MoonLogo" width="120" height="120" />
-                  <h1 style="color:#fff;line-height: 35px;font-weight:600;">{{__('mail.Moon')}}</h1>
-                  <p style="color:#fff;font-weight:600;">{{__('mail.Email')}}</p>
-               </div>
-            </div>
+            <table width="100%">
+                <tbody>
+                    <tr align="center">
+                        <td>
+                            <div class="content">
+                                <div class="logo" style="margin: 0 20px;">
+                                   <img src="https://moonegypt.com/moon.svg" alt="MoonLogo" width="120" height="120" />
+                                   <h1 style="color:#fff;line-height: 35px;font-weight:600;">{{__('mail.Moon')}}</h1>
+                                   <p style="color:#fff;font-weight:600;">{{__('mail.Email')}}</p>
+                                </div>
+                             </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <p style="color:#fff;font-weight:600;text-align:center;font-size:14px">{{__('mail.copyrights')}}</p>
         </div>
     </div>
