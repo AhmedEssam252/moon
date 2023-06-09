@@ -16,7 +16,7 @@
                             <div class="logo" >
                                 <a href="#" style="font-size:25px;margin:50px;
                                 text-decoration:none;font-size:20px;font-weight:bold;color:#ffffff;">
-                                   <img src="https://dashboard.moonegypt.com/images/moon.png" alt="Moon Logo" width="80" height="80" />
+                                   <img src="https://moonegypt.com/moon.png" alt="Moon Logo" width="80" height="80" />
                                 </a>
                              </div>
                         </td>
@@ -29,7 +29,7 @@
             <tbody>
                 <tr align="center">
                     <td>
-                        <img src="https://dashboard.moonegypt.com/images/home/spaceShips2.svg" alt="" width="300px" height="190px">
+                        <img src="https://moonegypt.com/spaceShips2.png" alt="" width="300px" height="190px">
                     </td>
                 </tr>
             </tbody>
@@ -41,7 +41,7 @@
                         <td>
                             <div class="content">
                                 <div class="logo" style="margin: 0 20px;">
-                                   <img src="https://dashboard.moonegypt.com/images/moon.png" alt="MoonLogo" width="120" height="120" />
+                                   <img src="https://moonegypt.com/moon.png" alt="MoonLogo" width="120" height="120" />
                                    <h1 style="color:#fff;line-height: 35px;font-weight:600;">{{__('mail.Moon')}}</h1>
                                    <p style="color:#fff;font-weight:600;">{{__('mail.Email')}}</p>
                                 </div>
