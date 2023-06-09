@@ -14,7 +14,7 @@
                     <tr align="left">
                         <td>
                             <div class="logo" >
-                                <a href="#" style="font-size:25px;margin:0 20px;
+                                <a href="#" style="font-size:25px;margin:50px;
                                 text-decoration:none;font-size:20px;font-weight:bold;color:#ffffff;">
                                    <img src="https://moonegypt.com/moon.svg" alt="Moon Logo" width="80" height="80" />
                                 </a>
