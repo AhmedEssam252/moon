@@ -18,7 +18,7 @@
             </div>
         </nav>
         @yield('content')
-        <img src="https://dashboard.moonegypt.com/images/home/spaceShips2.svg" alt="" width="300px" height="190px">
+        <img src="https://dashboard.moonegypt.com/images/home/spaceShips2.svg" alt="" width="300px" height="190px" style="position:relative; left:50%;transform:translate(-50%,0)">
         <div id="footer" class="section" style="display:grid;width: 100%;font-size: 18px;grid-auto-rows: auto;border-top: 40px solid #fff;background: #858585;">
             <div class="title" style="margin-top: 60px;position: relative;">
             </div>
