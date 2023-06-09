@@ -9,16 +9,32 @@
 <body>
     <div class="app" style="background:#023047;overflow-x: hidden;">
         <nav id="nav" style="padding:20px 0px;width:100%;margin:auto;">
-            <div class="logo" >
-               <a href="#" style="font-size:25px;margin:0 20px;
-               text-decoration:none;font-size:20px;font-weight:bold;color:#ffffff;">
-                  <img src="https://moonegypt.com/moon.svg" alt="Moon Logo" width="80" height="80" />
-                  <h1 style="margin:0px 20px;font-weight:600;color:#fff;line-height: 35px;">{{__('mail.Moon')}}</h1>
-               </a>
-            </div>
+            <table width="100%">
+                <tbody>
+                    <tr align="left">
+                        <td>
+                            <div class="logo" >
+                                <a href="#" style="font-size:25px;margin:0 20px;
+                                text-decoration:none;font-size:20px;font-weight:bold;color:#ffffff;">
+                                   <img src="https://moonegypt.com/moon.svg" alt="Moon Logo" width="80" height="80" />
+                                </a>
+                             </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
         </nav>
         @yield('content')
-        <img src="https://dashboard.moonegypt.com/images/home/spaceShips2.svg" alt="" width="300px" height="190px" style="position:relative; left:50%;transform:translate(-50%,0)">
+        <table width="100%">
+            <tbody>
+                <tr align="center">
+                    <td>
+                        <img src="https://dashboard.moonegypt.com/images/home/spaceShips2.svg" alt="" width="300px" height="190px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <div id="footer" class="section" style="display:grid;width: 100%;font-size: 18px;grid-auto-rows: auto;border-top: 40px solid #fff;background: #858585;">
             <div class="title" style="margin-top: 60px;position: relative;">
             </div>
