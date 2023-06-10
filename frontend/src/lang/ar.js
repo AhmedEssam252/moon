@@ -162,6 +162,7 @@ const Lang =
             demo:'نسخة تجريبية',
             cms: 'نظام ادارة محتوي',
             website: 'موقع الكتروني',
+            ecommerceLink:'https://moda.moonegypt.com/ar',
 
 } 
 

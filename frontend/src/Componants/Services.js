@@ -9,22 +9,6 @@ function Services(props) {
       <section id="services">
         <div className="container">
           <h1 className="main-header text-center">{lang.Services}</h1>
-          <div className="row align-items-center justify-content-center gy-3 py-3">
-            <div className="col-md-4 offset-1 d-flex justify-content-center">
-              <img
-                className="img-fluid"
-                src={spaceShip}
-                alt="spaceShip"
-                width="120"
-                height="auto"
-              />
-            </div>
-            <div className="col-md-4">
-              <h3 className="text-white text-center text-md-start ">
-                {lang.threeParts}
-              </h3>
-            </div>
-          </div>
           <div className="row py-3 justify-content-center align-items-center">
             <div className="col-md-4 front-end">
               <div className="content">

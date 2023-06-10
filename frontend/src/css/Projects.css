@@ -35,31 +35,26 @@
     border-radius: 17px;
     opacity: 0.41;
 }
-/* #projects a:hover {
-  color: white !important;
-} */
-#projects  .layer {
-    background-color: #0000007A;
+
+#projects .content img{
+    border: 10px solid #fff;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 10px #0000002f;
 }
-#projects .saas .layer a,
-#projects .e-commerce .layer a {
-    display: block;
-    width: fit-content;
-    margin: 0 auto 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem 1.25rem;
-    border-radius: 4px;
-    background-color: var(--first-color-botton);
+
+.projects_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 50px;
 }
-#projects .wordpress .layer a,
-#projects .website .layer a {
-    display: block;
-    width: fit-content;
-    margin: 0 auto 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem 1.25rem;
-    border-radius: 4px;
-    background-color: var(--second-color-botton);
+#projects .content{
+    width: 500px;
+    text-align: center;
+}
+.projects_info .content a{
+    background-color: #FBB040;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
 }

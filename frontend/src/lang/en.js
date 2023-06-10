@@ -172,6 +172,7 @@ const Lang =
            demo:'Demo',
            cms: 'CMS',
            website: 'website',
+           ecommerceLink:'https://moda.moonegypt.com/en',
 
 }
 
